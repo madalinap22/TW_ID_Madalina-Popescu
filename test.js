@@ -18,14 +18,14 @@ test(); */
 
 function test2() {
     let let1;
-    const const1 = 3; // Aceasta trebuie initializata la declarare
+    const const1 = 3; // aceasta trebuie initializata la declarare
 
     if (true) {
         let1 = 2;
         console.log(const1); // functioneaza pt ca este folosita in blocul in care a afost declarata {}
     }
 
-    console.log(let1); // Acum 'let1' este vizibila aici pt ca a fost declarata in afara blocului 'if'
+    console.log(let1); // 'let1' este vizibila aici pt ca a fost declarata in afara blocului 'if'
     // 'const1' nu ar putea fi accesata aici daca ar fi fost declarata in 'if'
 }
 
@@ -55,7 +55,7 @@ arr.push(5);
 
 console.log(arr);
 
-//la const putem modifica primitivele, nu si non-primitivele
+//la const putem modifica primitivele (doar comportamentul nu si zona de memorie), nu si non-primitivele
 
 
 
