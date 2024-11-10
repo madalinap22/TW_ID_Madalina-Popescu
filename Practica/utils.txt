@@ -43,3 +43,10 @@ https://frontend.turing.edu/lessons/module-1/js-truthy-falsy-expressions.html
 
 JS Statements:
 https://www.w3schools.com/jsref/jsref_if.asp
+
+Comparare obiecte:
+https://www.geeksforgeeks.org/how-to-compare-objects-in-javascript/
+https://dmitripavlutin.com/how-to-compare-objects-in-javascript/
+https://masteringjs.io/tutorials/fundamentals/compare-objects
+
+
