@@ -152,6 +152,7 @@ let arrayNew = array2.slice(1,3); //copiaza elemnetele de la pozitia 1 la 3 (3 n
 
 console.log(arrayNew);
 
+//for each reda item-ul si pozitia
 array2.forEach((item, index) =>{
     console.log(item + " "+ index);
 })
