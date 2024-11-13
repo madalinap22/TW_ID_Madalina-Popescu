@@ -50,3 +50,24 @@ https://dmitripavlutin.com/how-to-compare-objects-in-javascript/
 https://masteringjs.io/tutorials/fundamentals/compare-objects
 
 
+
+https://jsonplaceholder.typicode.com/users
+
+Metode HTTP:
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+
+Status HTTP:
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses
+
+In loc de try-catch in Axios: interceptorii
+https://axios-http.com/docs/interceptors
+
+
+
+REST = o arhitectura API care comunica cu JSON (sau SOAP care comunica prin xml)
+
+
+
+
+
+
