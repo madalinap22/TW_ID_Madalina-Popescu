@@ -108,11 +108,20 @@ fetchData();
 //document ruleaza doar in browser; nu si in terminalul JS
 const btn = document.getElementById("btnId");
 if(btn){
-    btn.addEventListener("click", function(e){
+    btn.addEventListener("click", function(e){//atasez un eveniment de click la elementul btn; //function(e) =functie callback care se executa cand este apasat butonul (adica evenimentul de click are loc)
         e.preventDefault(); //in caz ca pun script-ul din html intr-un form
         e.stopPropagation(); //opresc propagarea evenimentului din buton pe o iconita pusa pe buton, de exp
         console.log("test 2");
     })
 }
+
+//function(e) = functie callback, se declanseaza la evenimentul click
+//Functie callbak = este o funcție care este transmisă ca argument unei alte funcții și este executată mai târziu, de obicei după ce un eveniment sau o operațiune specifică este completată.
+//Pe scurt: Cand ceva se intampla, apeleaza aceasta functie
+//De ce folosim funcții callback?
+//Gestionarea evenimentelor: Callback-urile sunt folosite pentru a gestiona evenimente precum click-uri, trimiterea de formulare, sau răspunsuri de la server.
+//Operațiuni asincrone: Callback-urile sunt esențiale pentru gestionarea operațiunilor asincrone, cum ar fi cereri de date de la un server, fără a bloca executarea codului.
+//Modularitate și reutilizare: Funcțiile callback fac codul mai modular și mai ușor de reutilizat.
+
 
 
