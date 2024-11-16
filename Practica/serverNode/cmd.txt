@@ -33,3 +33,4 @@ script.js
 DEPLOY APLICATIE DE FRONT END PE UN SERVER DE NODE.js
 Pas 1. folder static denumit "public" si aici punem toate fisierele de FE
 Pas 2. se face un server de Node.js (pot sa fac un server pt applicatia de BE si unul de FE sau unul singur si pt FE si pt BE)
+

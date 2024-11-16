@@ -11,6 +11,7 @@ app.use(express.json());  //folosim date in format json
 app.use(express.urlencoded({ //url-ul poate fi extins (exp, la filtrarea in BD)
     extended: true
 }))
+
 //orice server poate avea un singur folder static unde se afla aplicatia de FE (""public")
 app.use(express.static('public')) //trebuie sa ii zic aplicatiei care este folderul static 
 

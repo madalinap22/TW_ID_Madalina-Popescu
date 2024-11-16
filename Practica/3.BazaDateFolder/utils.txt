@@ -1,0 +1,20 @@
+INFO: https://www.youtube.com/watch?v=w9THmx8b9fc
+
+1.comanda npm install - in terminal pt package.json
+2.comanda npm i express sequelize sqlite3 - pt express, seq si baza de 
+3.comanda npm i --save-dev nodemon  - instalare dependinta pt development (nodemon pt restartare server automat)
+4.In package.json adaugam "dev": "nodemon index.js" in  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+
+5. https://www.sqlite.org/download.html
+
+6. adaugam fisierele downloadate in folderul sqlite
+7. comanda cd .\sqlite\
+8. comanda .\sqlite3.exe
+9. comanda .open test.db - pt creare
+
+
+
+SEQUALIZE = biblioteca de tip ORM (Object-Relational Mapping) pentru Node.js, 
+care te ajuta sa interactionezi cu baze de date relationale
