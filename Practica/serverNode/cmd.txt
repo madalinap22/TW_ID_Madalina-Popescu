@@ -1,0 +1,35 @@
+npm init
+npm install
+npm install
+npm install express
+npm install cors //pt security la partea de REACT (FE)
+
+De regula index.js e fisierul principal -> CONVENTIE
+
+in package.json este json-ul principal si vedem: fisierul de start (main), dependintele; Aici punem: "type": "module",  //pt varianta noua 
+"author": "",
+  "license": "ISC",
+  "type": "module",  //pt varianta noua de express
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1"
+  }
+in package-lock.jason - pachetele de node modules ci link-urile de unde se descarca, etc - nu avem treaba cu asta
+
+in node_modules - pachetele instalate
+
+CTRL + C pentru a inchide conexiunea din Terminalul Node.js
+sau "npm install --save-dev nodemon"  -> ca sa persiste modificarile din cod fara sa ne inchidem conexiunea si apoi sa o repornim
+dupa asta nu mai folosim node index.js ci "npx nodemon"
+
+In .env (fisier pentru configurari; aplicatia le ia singura) se tine conexiunea la BD, autorizare - autentificare, tot felul ed variabile de care serverul are nevoie si pe care noi trebuie sa le configuram
+
+LOCAL STORAGE, SESSION STORAGE, COOKIE
+PENTRU CACHE-uri - FE
+index.html
+script.js
+
+DEPLOY APLICATIE DE FRONT END PE UN SERVER DE NODE.js
+Pas 1. folder static denumit "public" si aici punem toate fisierele de FE
+Pas 2. se face un server de Node.js (pot sa fac un server pt applicatia de BE si unul de FE sau unul singur si pt FE si pt BE)
