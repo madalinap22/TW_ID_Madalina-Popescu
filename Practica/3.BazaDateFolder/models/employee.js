@@ -10,6 +10,7 @@ const Employee = sequelize.define(
             autoIncrement: true
         },
         firstName: DataTypes.STRING,
+        
         lastName: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -27,6 +28,11 @@ const Employee = sequelize.define(
             type: DataTypes.INTEGER,
             validate: {min: 1900}
         },
+        salary:{
+            type: DataTypes.INTEGER,
+            defaultValue: 0,
+            validate: {min: 0,},
+        }
 
         //{tableName:"Employees"} //sequelize face asta automat
 
