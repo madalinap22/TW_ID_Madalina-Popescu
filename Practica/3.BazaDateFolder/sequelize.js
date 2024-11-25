@@ -1,4 +1,4 @@
-//aici instatntiem conexiunea la BD
+//aici instantiem conexiunea la BD
 
 const {Sequelize} = require('sequelize')
 const sequelize = new Sequelize({
@@ -7,9 +7,14 @@ const sequelize = new Sequelize({
 })
 
 //activam sincronizarea pe entitatea de sequelize
-sequelize.sync({alter: true}).then(()=>{  //daca tabela existenta coincide cu ce vem in cod tabela nu se sterge
+// sequelize.sync({alter: true}).then(()=>{  //daca tabela existenta coincide cu ce avem in cod tabela nu se sterge
+//     console.log("Toate tabelele au fost sincronizate");
+// });
+
+sequelize.sync().then(() => {
     console.log("Toate tabelele au fost sincronizate");
 });
+
 
 module.exports = sequelize
 

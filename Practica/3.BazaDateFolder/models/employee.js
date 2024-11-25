@@ -1,4 +1,4 @@
-const { DataTypes } = require("sequelize");
+const { DataTypes } = require("sequelize"); //DataTypes = obiect oferit de Sequelize pt definirea tipurilor de date ale coloanelor tabeleleor
 const sequelize = require("../sequelize");
 
 const Employee = sequelize.define(
