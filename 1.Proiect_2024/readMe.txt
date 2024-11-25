@@ -1,4 +1,6 @@
-1. Tema proiectului: Administrare locuri de parcare cu Google Maps
+0. Identificare student: Popescu Madalina, grupa 1117
+
+1.Tema proiectului: Administrare locuri de parcare cu Google Maps
 
 2. Arhitectura proiectului:
 2.1. Back-end: Un server RESTful construit cu Node.js si Express, care va gestiona operatiile CRUD pentru entitatile din baza de date.
