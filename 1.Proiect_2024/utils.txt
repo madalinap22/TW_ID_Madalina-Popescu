@@ -1,0 +1,25 @@
+
+GET: http://localhost:8000/api/parcari
+
+POST: http://localhost:8000/api/parcari
+{
+    "name": "Park & Ride Straulesti",
+    "adresa": "Bulevardul Bucurestii Noi 241, Bucuresti",
+    "capacitate": 1000,
+    "latitudine": 44.50364127177135,
+    "longitudine": 26.024884690102382
+}
+
+GET BY ID: http://localhost:8000/api/parcari/6
+
+PUT: http://localhost:8000/api/parcari/1
+{
+    "name": "Park & Ride Straulesti",
+    "adresa": "Bulevardul Bucurestii Noi 241, Bucuresti",
+    "capacitate": 1000,
+    "latitudine": 44.50364127177135,
+    "longitudine": 26.024884690102382
+}
+
+DELETE:  http://localhost:8000/api/parcari/1
+!!! Atentie. Parcarile din BD incep de la 2 pt ca 1 a fost stearsa
