@@ -1,7 +1,7 @@
 const ParkingLot = require("../models/parcare");
 console.log(ParkingLot);
 
-const {Op} = require('sequelize'); ////importul din sequelize a operatorilor SQL(>=, <=, =, LIKE, etc)
+const {Op} = require('sequelize'); //importul din sequelize a operatorilor SQL(>=, <=, =, LIKE, etc)
 
 //const router - pt a putea sa definim rutele din proiect
 const router = require("express").Router();
@@ -68,6 +68,7 @@ router
         }
     });
 
+    
 
 //console.log("Exporting router:", router);
 module.exports = router; //ca sa il pot adauga in index.js

@@ -1,4 +1,5 @@
-
+Pentru verificare am folosit Postman
+1. PARKING LOTS:
 GET: http://localhost:8000/api/parcari
 
 POST: http://localhost:8000/api/parcari
@@ -22,4 +23,25 @@ PUT: http://localhost:8000/api/parcari/1
 }
 
 DELETE:  http://localhost:8000/api/parcari/1
-!!! Atentie. Parcarile din BD incep de la 2 pt ca 1 a fost stearsa
+
+
+2. PARKING SPOTS:
+GET:  http://localhost:8000/api/locuri
+POST: http://localhost:8000/api/locuri
+{
+    "numarLoc": 10,
+    "status": "OCUPAT",
+    "parkingLotId": 1
+}
+
+PUT http://localhost:8000/api/locuri/1
+{
+    "numarLoc": 5,
+    "status": "OCUPAT"
+}
+
+DELETE: http://localhost:8000/api/locuri/1
+
+3.Extra
+3.1. Parcari cu detalii (numar locuri libere/ocupate): GET: http://localhost:8000/api/parcari/detalii
+
