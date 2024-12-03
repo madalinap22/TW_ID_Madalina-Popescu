@@ -42,6 +42,9 @@ PUT http://localhost:8000/api/locuri/1
 
 DELETE: http://localhost:8000/api/locuri/1
 
-3.Extra
+3.Extra/Statistici
 3.1. Parcari cu detalii (numar locuri libere/ocupate): GET: http://localhost:8000/api/parcari/detalii
-
+3.2. Parcari disponibile GET http://localhost:8000/api/parcari/disponibile
+3.3. Cauta parcare dupa nume: GET http://localhost:8000/api/parcari/cauta?name=charles
+3.3.1 Cauta parcare dupa adresa GET http://localhost:8000/api/parcari/cauta?adresa=bucuresti
+3.3.2. Cauta parcare dupa nume si adresa GET http://localhost:8000/api/parcari/cauta?name=charles&adresa=bucuresti

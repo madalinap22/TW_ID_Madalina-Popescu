@@ -3,6 +3,8 @@ const router = express.Router();
 const ParkingLot = require("../models/parcare");
 const ParkingSpot = require("../models/locParcare"); 
 
+const {Op} = require('sequelize'); //importul din sequelize a operatorilor SQL(>=, <=, =, LIKE, etc)
+
 //Parcari+detalii
 router.get("/parcari/detalii", async (req, res) => {
     try {
@@ -56,6 +58,21 @@ router.get("/parcari/disponibile", async (req, res) => {
     }
 });
 
+//cauta parcari dupa nume/adresa/nume&adresa
+router.get("/parcari/cauta", async (req, res) => {
+    try {
+        const { name, adresa } = req.query;
+
+        const where = {};
+        if (name) where.name = { [Op.like]: `%${name}%` };
+        if (adresa) where.adresa = { [Op.like]: `%${adresa}%` };
+
+        const parcari = await ParkingLot.findAll({ where });
+        return res.status(200).json(parcari);
+    } catch (err) {
+        return res.status(500).json(err);
+    }
+});
 
 
 
