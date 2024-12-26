@@ -1,8 +1,7 @@
-const { DataTypes } = require("sequelize"); //DataTypes = obiect oferit de Sequelize pt definirea tipurilor de date ale coloanelor tabeleleor
-const sequelize = require("../sequelize");
+const { DataTypes } = require("sequelize"); //DataTypes = obiect oferit de Sequelize pt definirea tipurilor de date ale coloanelor tabeleleor; Exemplu: firstName: DataTypes.STRING, // Definește coloana firstName ca un STRING
+const sequelize = require("../sequelize"); //import instanta sequelize definita in sequelize.js pt a crea modele si conexiunea la BD
 
-const Employee = sequelize.define(
-    "Employee",
+const Employee = sequelize.define("Employee",
     {
         id:{
             type:DataTypes.INTEGER,
@@ -38,4 +37,4 @@ const Employee = sequelize.define(
 
      })
 
-     module.exports = Employee;
+     module.exports = Employee; //exporta modelul Employee pt a fi utilizat in alte fisiere din proiect
