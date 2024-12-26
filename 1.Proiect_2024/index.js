@@ -1,7 +1,12 @@
 "use strict"; //directiva
 
+const env = require('dotenv'); // in loc de import - ca sa pot folosi import ar trebui sa am tipul proiectului setat ca "module" in package.json (type:"module")
+env.config(); //pt fisierul de configurare
+let port = process.env.PORT || 8001;
+
 const express = require('express')
 const sequelize = require('./sequelize') //atentie la ./
+
 
 const ParkingLot = require("./models/parcare");
 const ParkingSpot = require("./models/locParcare");
@@ -18,9 +23,7 @@ app.use("/api", require("./routes/locuriParcare"));
 
 
 
-
-
-app.listen(8000, async ()=>{
+app.listen(port, async ()=>{
     console.log("Server started on http://localhost:8000");
     try{
         await sequelize.authenticate();
