@@ -1,11 +1,13 @@
 //aici instantiem conexiunea la BD
+require('dotenv').config();
 
 const {Sequelize} = require('sequelize');
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: "./sqlite/proiect.db" 
-    //plus username, password, etc din .env (sa nu uiti de env.config())
+    storage: "./sqlite/proiect.db",
+    username: process.env.DB_USERNAME,
+    password: process.env.DB_PASSWORD,
 });
 
 
