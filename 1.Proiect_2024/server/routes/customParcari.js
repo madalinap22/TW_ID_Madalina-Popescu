@@ -12,7 +12,6 @@ router.get("/parcari/detalii", async (req, res) => {
             include: [{ model: ParkingSpot, attributes: ["status"] }]
         });
 
-        // Transformă datele într-un răspuns sumarizat
         const response = parcari.map(parcare => {
             const locuri = parcare.ParkingSpots || [];
             const totalLocuriOcupate = locuri.filter(loc => loc.status === "OCUPAT").length;
