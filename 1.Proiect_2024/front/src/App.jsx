@@ -64,7 +64,7 @@ function App() {
       });
       if (response.ok) {
         alert(`Parcarea cu ID-ul ${id} a fost actualizata.`);
-        setEditParcare(null); // Resetează formularul
+        setEditParcare(null); 
         fetchParcari();
       } else {
         alert("Eroare la actualizarea parcarii.");
@@ -173,7 +173,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Parcari si Locuri de Parcare</h1>
+      <h1>Administrare locuri de parcare</h1>
   
       {}
       <h2>Parcari Disponibile</h2>

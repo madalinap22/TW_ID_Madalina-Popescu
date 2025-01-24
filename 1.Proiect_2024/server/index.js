@@ -9,7 +9,6 @@ const sequelize = require('./sequelize') //atentie la ./
 
 const cors = require('cors');
 
-
 const ParkingLot = require("./models/parcare");
 const ParkingSpot = require("./models/locParcare");
 
